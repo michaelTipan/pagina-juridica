@@ -19,17 +19,17 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
-              Ãreas de PrÃ¡ctica
+              Áreas de Práctica
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-navy mt-4">
-              Soluciones legales en cada Ã¡rea del derecho
+              Soluciones legales en cada área del derecho
             </h2>
           </div>
           <Link
             href="/servicios"
             className="inline-flex items-center gap-2 text-sm font-medium text-navy hover:text-gold transition-colors"
           >
-            Ver todas las Ã¡reas <ArrowRight className="h-4 w-4" />
+            Ver todas las áreas <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
 
@@ -59,7 +59,7 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
                   {s.descripcion}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-gold group-hover:gap-3 transition-all">
-                  Conocer mÃ¡s <ArrowRight className="h-3.5 w-3.5" />
+                  Conocer más <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </div>
             </Link>
@@ -69,4 +69,3 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
     </section>
   );
 }
-

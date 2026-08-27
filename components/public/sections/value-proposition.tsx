@@ -3,23 +3,23 @@ import { Users, Eye, Brain, Compass } from 'lucide-react';
 const values = [
   {
     icon: Users,
-    title: 'AtenciÃ³n personalizada',
-    desc: 'Cada caso es Ãºnico. Te escuchamos y dedicamos el tiempo necesario para entender tu situaciÃ³n a fondo.',
+    title: 'Atención personalizada',
+    desc: 'Cada caso es único. Te escuchamos y dedicamos el tiempo necesario para entender tu situación a fondo.',
   },
   {
     icon: Eye,
-    title: 'ComunicaciÃ³n transparente',
+    title: 'Comunicación transparente',
     desc: 'Te mantenemos informado en cada etapa del proceso, con un lenguaje claro y sin tecnicismos innecesarios.',
   },
   {
     icon: Brain,
-    title: 'Estrategia jurÃ­dica',
-    desc: 'DiseÃ±amos una estrategia legal a tu medida, evaluando riesgos y oportunidades para tomar las mejores decisiones.',
+    title: 'Estrategia jurídica',
+    desc: 'Diseñamos una estrategia legal a tu medida, evaluando riesgos y oportunidades para tomar las mejores decisiones.',
   },
   {
     icon: Compass,
-    title: 'AcompaÃ±amiento integral',
-    desc: 'Te acompaÃ±amos durante todo el proceso, desde la primera consulta hasta la resoluciÃ³n final de tu caso.',
+    title: 'Acompañamiento integral',
+    desc: 'Te acompañamos durante todo el proceso, desde la primera consulta hasta la resolución final de tu caso.',
   },
 ];
 
@@ -29,14 +29,14 @@ export function ValueProposition() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
-            Â¿Por quÃ© elegirnos?
+            ¿Por qué elegirnos?
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-navy mt-4">
-            Una firma jurÃ­dica pensada para ti
+            Una firma jurídica pensada para ti
           </h2>
           <p className="mt-4 text-muted-foreground leading-loose">
-            No gestionamos casos en serie. Trabajamos con un nÃºmero limitado de
-            clientes para garantizar dedicaciÃ³n, cercanÃ­a y resultados.
+            No gestionamos casos en serie. Trabajamos con un número limitado de
+            clientes para garantizar dedicación, cercanía y resultados.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export function ValueProposition() {
               <h3 className="font-serif text-xl font-semibold text-navy mb-3">
                 {v.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-loose">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {v.desc}
               </p>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-gold group-hover:w-full transition-all duration-300 rounded-b-lg" />
@@ -64,4 +64,3 @@ export function ValueProposition() {
     </section>
   );
 }
-

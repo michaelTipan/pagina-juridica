@@ -23,7 +23,7 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
             Abogados dedicados a tu caso
           </h2>
           <p className="mt-4 text-muted-foreground leading-loose">
-            Un equipo cercano, con formaciÃ³n sÃ³lida y compromiso real con cada
+            Un equipo cercano, con formación sólida y compromiso real con cada
             cliente.
           </p>
         </div>
@@ -52,7 +52,7 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
                   <GraduationCap className="h-3.5 w-3.5" /> {a.especialidad}
                 </p>
                 {a.biografia && (
-                  <p className="mt-4 text-sm text-muted-foreground leading-loose line-clamp-3">
+                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed line-clamp-3">
                     {a.biografia}
                   </p>
                 )}
@@ -73,4 +73,3 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
     </section>
   );
 }
-
