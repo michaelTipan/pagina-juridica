@@ -35,7 +35,7 @@ export default function AdminProtectedLayout({
   return (
     <div className="min-h-screen flex bg-secondary/30">
       <AdminSidebar profile={profile} />
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 lg:pl-64">
         <header className="bg-white border-b border-border h-16 flex items-center justify-between px-6 sticky top-0 z-30">
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-navy transition-colors">
