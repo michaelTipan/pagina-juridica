@@ -10,9 +10,9 @@ export function HeroSection({ config }: { config: ConfiguracionWeb }) {
   return (
     <section className="relative min-h-[100svh] flex items-center bg-navy overflow-hidden pt-24">
       <div className="absolute inset-0">
-        <video autoPlay loop muted playsInline poster="https://images.pexels.com/photos/5673490/pexels-photo-5673490.jpeg?auto=compress&cs=tinysrgb&w=1600" className="object-cover w-full h-full opacity-30"><source src="https://videos.pexels.com/video-files/5673489/5673489-uhd_2560_1440_24fps.mp4" type="video/mp4" /></video>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60" />
+        <video autoPlay loop muted playsInline poster="https://images.pexels.com/photos/5673490/pexels-photo-5673490.jpeg?auto=compress&cs=tinysrgb&w=1600" className="object-cover w-full h-full opacity-50"><source src="https://videos.pexels.com/video-files/5673489/5673489-uhd_2560_1440_24fps.mp4" type="video/mp4" /></video>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-navy/80" />
       </div>
 
       <div className="relative container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
