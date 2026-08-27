@@ -22,16 +22,16 @@ export function BlogPreview({ articulos }: { articulos: Articulo[] }) {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
-              Blog Jurídico
+              Blog JurÃ­dico
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-navy mt-4">
-              Información legal que te orienta
+              InformaciÃ³n legal que te orienta
             </h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              Guías y análisis jurídicos para ayudarte a entender tus derechos y
+            <p className="mt-4 text-muted-foreground leading-loose">
+              GuÃ­as y anÃ¡lisis jurÃ­dicos para ayudarte a entender tus derechos y
               tomar decisiones informadas.
             </p>
           </div>
@@ -39,7 +39,7 @@ export function BlogPreview({ articulos }: { articulos: Articulo[] }) {
             href="/blog"
             className="inline-flex items-center gap-2 text-sm font-medium text-navy hover:text-gold transition-colors"
           >
-            Ver todos los artículos <ArrowRight className="h-4 w-4" />
+            Ver todos los artÃ­culos <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
 
@@ -59,7 +59,7 @@ export function BlogPreview({ articulos }: { articulos: Articulo[] }) {
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                   <CalendarDays className="h-3.5 w-3.5" />
                   {formatDate(a.fecha_publicacion || a.created_at)}
@@ -68,12 +68,12 @@ export function BlogPreview({ articulos }: { articulos: Articulo[] }) {
                   {a.titulo}
                 </h3>
                 {a.resumen && (
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed line-clamp-3 flex-1">
+                  <p className="mt-3 text-sm text-muted-foreground leading-loose line-clamp-3 flex-1">
                     {a.resumen}
                   </p>
                 )}
                 <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-gold group-hover:gap-3 transition-all">
-                  Leer artículo <ArrowRight className="h-3.5 w-3.5" />
+                  Leer artÃ­culo <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </div>
             </Link>
@@ -83,3 +83,4 @@ export function BlogPreview({ articulos }: { articulos: Articulo[] }) {
     </section>
   );
 }
+

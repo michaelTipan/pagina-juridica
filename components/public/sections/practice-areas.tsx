@@ -19,17 +19,17 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
-              Áreas de Práctica
+              Ãreas de PrÃ¡ctica
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-navy mt-4">
-              Soluciones legales en cada área del derecho
+              Soluciones legales en cada Ã¡rea del derecho
             </h2>
           </div>
           <Link
             href="/servicios"
             className="inline-flex items-center gap-2 text-sm font-medium text-navy hover:text-gold transition-colors"
           >
-            Ver todas las áreas <ArrowRight className="h-4 w-4" />
+            Ver todas las Ã¡reas <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
 
@@ -38,7 +38,7 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
             <Link
               key={s.id}
               href={`/servicios/${s.slug}`}
-              className="group relative overflow-hidden rounded-lg bg-navy aspect-[4/5] flex flex-col justify-end p-6 hover:shadow-2xl transition-all duration-500"
+              className="group relative overflow-hidden rounded-lg bg-navy aspect-[4/5] flex flex-col justify-end p-8 sm:p-10 hover:shadow-2xl transition-all duration-500"
             >
               <Image
                 src={s.imagen_url || defaultImages[s.slug] || defaultImages['derecho-civil']}
@@ -55,11 +55,11 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
                 <h3 className="font-serif text-xl font-semibold text-white mb-2">
                   {s.nombre}
                 </h3>
-                <p className="text-sm text-white/70 leading-relaxed line-clamp-3">
+                <p className="text-sm text-white/70 leading-loose line-clamp-3">
                   {s.descripcion}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-gold group-hover:gap-3 transition-all">
-                  Conocer más <ArrowRight className="h-3.5 w-3.5" />
+                  Conocer mÃ¡s <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </div>
             </Link>
@@ -69,3 +69,4 @@ export function PracticeAreas({ servicios }: { servicios: Servicio[] }) {
     </section>
   );
 }
+

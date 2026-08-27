@@ -22,8 +22,8 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
           <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-navy mt-4">
             Abogados dedicados a tu caso
           </h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            Un equipo cercano, con formación sólida y compromiso real con cada
+          <p className="mt-4 text-muted-foreground leading-loose">
+            Un equipo cercano, con formaciÃ³n sÃ³lida y compromiso real con cada
             cliente.
           </p>
         </div>
@@ -43,7 +43,7 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <h3 className="font-serif text-xl font-semibold text-navy">
                   {a.nombre}
                 </h3>
@@ -52,7 +52,7 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
                   <GraduationCap className="h-3.5 w-3.5" /> {a.especialidad}
                 </p>
                 {a.biografia && (
-                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                  <p className="mt-4 text-sm text-muted-foreground leading-loose line-clamp-3">
                     {a.biografia}
                   </p>
                 )}
@@ -73,3 +73,4 @@ export function TeamPreview({ abogados }: { abogados: Abogado[] }) {
     </section>
   );
 }
+
