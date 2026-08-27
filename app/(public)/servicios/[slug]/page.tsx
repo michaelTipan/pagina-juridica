@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -18,7 +18,7 @@ const defaultImages: Record<string, string> = {
 type Props = { params: { slug: string } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('servicios')
     .select('nombre, slug, meta_titulo, meta_descripcion, descripcion')
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ServicioDetallePage({ params }: Props) {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('servicios')
     .select('*')

@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import Image from 'next/image';
 import { GraduationCap } from 'lucide-react';
 import type { Metadata } from 'next';
@@ -19,7 +19,7 @@ const defaultPhotos: string[] = [
 ];
 
 export default async function EquipoPage() {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('abogados')
     .select('*')

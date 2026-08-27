@@ -1,3 +1,4 @@
+export const revalidate = 86400;
 import { SiteHeader } from '@/components/public/site-header';
 import { SiteFooter } from '@/components/public/site-footer';
 import { WhatsAppFloat } from '@/components/public/whatsapp-float';

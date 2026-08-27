@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import type { Metadata } from 'next';
 import { ContactForm } from '@/components/public/contact-form';
 import { Mail, MapPin, Phone, MessageCircle, Facebook, Instagram, Linkedin } from 'lucide-react';

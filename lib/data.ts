@@ -1,8 +1,8 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import type { ConfiguracionWeb } from '@/types/database';
 
 export async function getSiteConfig(): Promise<ConfiguracionWeb> {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('configuracion_web')
     .select('*')

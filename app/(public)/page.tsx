@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import { getSiteConfig, whatsappLink } from '@/lib/data';
 import { HeroSection } from '@/components/public/sections/hero';
 import { ValueProposition } from '@/components/public/sections/value-proposition';
@@ -11,7 +11,7 @@ import { CtaSection } from '@/components/public/sections/cta';
 import type { Servicio, Abogado, Articulo, Faq } from '@/types/database';
 
 export default async function HomePage() {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const config = await getSiteConfig();
 
   const [

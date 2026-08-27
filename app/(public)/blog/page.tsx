@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, CalendarDays } from 'lucide-react';
@@ -26,7 +26,7 @@ function formatDate(d: string | null) {
 }
 
 export default async function BlogPage() {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('articulos')
     .select('*')

@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createPublicClient } from '@/lib/supabase/public';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import { getSiteConfig, whatsappLink } from '@/lib/data';
 type Props = { params: { slug: string } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('articulos')
     .select('titulo, slug, meta_titulo, meta_descripcion, resumen')
@@ -44,7 +44,7 @@ function formatDate(d: string | null) {
 }
 
 export default async function ArticuloPage({ params }: Props) {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data } = await supabase
     .from('articulos')
     .select('*')
